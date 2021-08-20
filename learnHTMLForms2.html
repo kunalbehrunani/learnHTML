@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>User Information</title>
+    </head>
+    <body>
+      <h1>Welcome to Pizza Corner!</h1>
+      <h3>Let's get started with your customized Pizza:</h3>
+      
+      <form action="./index.html" method="POST">
+
+        <span>Category: </span>
+        <input type="radio" name="category" id="veg" value=veg>
+        <label for="veg">Veg</label>
+
+        <input type="radio" name="category" id="nonveg" value="nonveg">
+        <label for="nonveg">Non Veg</label>
+
+        <br><br>
+
+        <label for="base">Pizza Base: </label>
+        <select  list="pizza-bases" name="base" id="base">
+        <datalist id="pizza-bases">
+            <option value="whole-wheat">Whole Wheat Bread</option>
+            <option value="honey-oats">Honey Oats Bread</option>
+            <option value="multi-grain">Multi Grains Bread</option>
+            <option value="Corn-bread">Corn Bread</option>
+            <option value="white-bread">White Bread</option>
+        </datalist>
+        </select>
+
+        <br><br>
+
+        <span>Veggies: </span>
+        
+        <input type="checkbox" name="veggies" id="tomato" value="tomato">
+        <label for="tomato">Tomato</label>
+
+        <input type="checkbox" name="veggies" id="lettuce" value="lettuce">
+        <label for="lettuce">Lettuce</label>
+
+        <input type="checkbox" name="veggies" id="jalapeno" value="jalapeno">
+        <label for="jalapeno">Jalapeno</label>
+
+        <input type="checkbox" name="veggies" id="olives" value="black-olives">
+        <label for="olives">Black Olives</label>
+
+        <input type="checkbox" name="veggies" id="cucumber" value="cucumber">
+        <label for="cucumber">Cucumber</label>
+
+        <br><br>
+
+        <span>Cheese: </span>
+        <input type="radio" name="cheese" id="mozzarella" value="mozzarella-cheese">
+        <label for="mozzarella">Mozzarella Cheese</label>
+
+        <input type="radio" name="cheese" id="cheddar" value="cheddar-cheese">
+        <label for="cheddar">Cheddar Cheese</label>
+
+        <input type="radio" name="cheese" id="parmesan" value="parmesan-cheese">
+        <label for="parmesan">Parmesan Cheese</label>
+
+        <br><br>
+
+        <label for="amountOfCheese">Amount of Cheese</label>
+        <input type="range" min="0" max="4" step="1" value="3" id="amountOfCheese">
+
+        
+        <br><br>
+
+        <label for="other">Any other suggestions: </label>
+        <textarea type="textarea" name="other-suggestions" rows="2" cols="30" id="other">
+        </textarea>
+
+        <h5>Hurray! Limited Period Offer!! Only for you :)</h5>
+        <p>We're giving one extra topping. Absolutely free of cost.</p>
+
+        <input type="text" list="toppings" name="extra-topping" id="topping">
+        <datalist id="toppings">
+            <option value="broccoli">Broccolini</option>
+            <option value="bacon">Bacon</option>
+            <option value="mushrooms">Mushrooms</option>
+        </datalist>
+
+        <br><br>
+
+        <input type="submit" name="results" id="submit" value="Submit :)">
+
+      </form>
+
+
+    </body>
+
+
+
+</html>
